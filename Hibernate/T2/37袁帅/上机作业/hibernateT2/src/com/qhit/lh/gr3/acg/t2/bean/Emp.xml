@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+<class name="com.qhit.lh.gr3.acg.t2.bean.Emp" table="t_user" >
+		<id name="id" column="id" type="integer">
+		<!-- 主键的自增方式为默认 -->
+		
+		<generator class="native">
+		<param name="property">user</param>
+		</generator>
+		</id>
+		
+         <property name="ename" column="uname" type="string"></property>
+		
+		<property name="sex" column="sex" type="string"></property>
+		<property name="age" column="age" type="integer"></property>
+	    <one-to-one name="user" class="com.qhit.lh.gr3.acg.t2.bean.User"></one-to-one>
+	</class>
+</hibernate-mapping>
+
