@@ -6,7 +6,8 @@ import com.qhit.lh.gr3.acg.bean.Emp;
 import com.qhit.lh.gr3.acg.service.BaseService;
 import com.qhit.lh.gr3.acg.service.impl.BaseServiceImpl;
 
-public class EmpText {
+public class EmpText { 
+
 	BaseService bs = new 	BaseServiceImpl();
 	 	@org.junit.Test
 	 	public void add(){
